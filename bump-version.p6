@@ -9,4 +9,5 @@ sub MAIN($version where /^\d+'.'\d+'.'\d+$/) {
             die "Could not find version to bump in $_/Dockerfile";
         }
     }
+    shell "git commit -m 'Bump images to Cro $version' . && git push origin master"
 }
