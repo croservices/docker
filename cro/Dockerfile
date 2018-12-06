@@ -9,6 +9,6 @@ RUN apt-get update && \
     zef install 'Cro::TLS:ver<'$cro_version'>' && \
     zef install 'Cro::HTTP:ver<0.7.6.1>' && \
     zef install 'Cro::WebSocket:ver<'$cro_version'>' && \
-    zef install 'Cro:ver<'$cro_version'>' && \
+    zef install 'cro:ver<'$cro_version'>' && \
     apt-get purge -y --auto-remove build-essential && \
     rm -rf /var/lib/apt/lists/*
