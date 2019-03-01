@@ -8,4 +8,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     zef install 'Cro::Core:ver<'$cro_version'>' && \
     zef install 'Cro::TLS:ver<'$cro_version'>' && \
-    zef install 'Cro::HTTP:ver<0.7.6.1>'
+    zef install 'Cro::HTTP:ver<'$cro_version'>'
