@@ -1,7 +1,7 @@
 FROM rakudo-star:2018.10
 MAINTAINER Jonathan Worthington <jonathan@edument.se>
 
-ARG cro_version=0.8.0
+ARG cro_version=0.8.1
 
 RUN apt-get update && \
     apt-get --yes --no-install-recommends install libssl1.0-dev && \
