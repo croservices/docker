@@ -1,5 +1,5 @@
 sub MAIN($version where /^\d+'.'\d+'.'\d+$/) {
-    my constant @repos = 'cro-core', 'cro-http', 'cro-http-websocket', 'cro', 'cro-zeromq';
+    my constant @repos = 'cro-core', 'cro-http', 'cro-http-websocket', 'cro';
 
     for @repos {
         if slurp("$_/Dockerfile") !~~ /'cro_version=' $version/ {
