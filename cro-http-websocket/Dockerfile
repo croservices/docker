@@ -1,7 +1,7 @@
 FROM rakudo-star:2020.01
 MAINTAINER Jonathan Worthington <jonathan@edument.se>
 
-ARG cro_version=0.8.5
+ARG cro_version=0.8.6
 
 RUN apt-get update && \
     apt-get --yes --no-install-recommends install libssl-dev build-essential && \
